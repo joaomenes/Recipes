@@ -341,7 +341,9 @@ h6 {
   color: var(--color-error-dark);
 }
 
-.form-content input {
+.form-content input,
+.form-content textarea,
+.form-content select {
   width: 100%;
   padding: 1rem;
   border-radius: 0.4rem;
@@ -352,6 +354,14 @@ h6 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: calc(var(--spacing-gutter-medium) / 2) var(--spacing-gutter-medium);
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.left {
+  text-align: left;
 }
 
 .form-content button {
